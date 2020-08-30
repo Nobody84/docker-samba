@@ -2,5 +2,5 @@
 echo "Start Web Service Discovery host daemon (WSDD)"
 python3 wsdd.py &
 echo ""
-echo "Sart /usr/bin/samba.sh for original docker image"
+echo "Start /usr/bin/samba.sh from original docker image"
 /usr/bin/samba.sh $@
