@@ -3,9 +3,10 @@ echo "Start Web Service Discovery host daemon (WSDD)"
 
 if [ "${PRINT_PARAMETER}" = "yes" ]
 then
-  echo "Parameter: ${WSSD_PARAMETER}"
+  echo "Parameter: ${WSDD_PARAMETER}"
 fi
-python3 wsdd.py ${WSSD_PARAMETER} &
+
+python3 wsdd.py ${WSDD_PARAMETER} &
 
 echo ""
 echo "Start /usr/bin/samba.sh from original docker image"
@@ -20,4 +21,5 @@ if [ "${PRINT_PARAMETER}" = "yes" ]
 then
   echo "Parameter: ${SAMBA_PARAMETER}"
 fi
+
 /usr/bin/samba.sh ${SAMBA_PARAMETER}
