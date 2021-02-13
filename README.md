@@ -42,5 +42,5 @@ docker run -it \
 # Print parameter
 To let the container print your parameter to the ouput you can set the environment variabel 'PRINT_PARAMETER' to 'yes'. But caution the samba usernames and passwords are also printet to the output. Make sure no unauthorized user have access to the log.
 ```
--e PRINT_PARAMETER=yes
+-e PRINT_PARAMETER="yes"
 ```
