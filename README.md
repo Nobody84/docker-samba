@@ -17,7 +17,7 @@ To set the options for WSSD you have to use the environment variable `WSSD_PARAM
 docker run -it \
 -p 139:139 \
 -p 445:445 \
--e WSSD_PARAMETER="-i eth0 -4" \
+-e WSDD_PARAMETER="-i eth0 -4" \
 -d topdockercat/samba
 ```
 
