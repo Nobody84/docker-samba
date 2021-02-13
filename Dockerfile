@@ -3,7 +3,7 @@ FROM dperson/samba
 # install wsdd2
 RUN apk --no-cache --no-progress upgrade && \
     apk --no-cache --no-progress add python3 curl && \
-    curl https://raw.githubusercontent.com/christgau/wsdd/v0.5/src/wsdd.py -o wsdd.py && \
+    curl https://raw.githubusercontent.com/christgau/wsdd/v0.6.4/src/wsdd.py -o wsdd.py && \
     apk del curl
 
 COPY entrypoint.sh /
