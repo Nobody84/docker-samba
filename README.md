@@ -11,7 +11,7 @@ This docker image did not change the way samba is used in the original image. It
 # Configure WSDD and/or SAMBA
 
 ## WSDD
-To set the options for WSSD you have to use the environment variable `WSDD_PARAMETER`. For more information about the available option, please have a look at the original repository https://github.com/christgau/wsdd#options.
+To set the options for WSDD you have to use the environment variable `WSDD_PARAMETER`. For more information about the available option, please have a look at the original repository https://github.com/christgau/wsdd#options.
 
 ```
 docker run -it \
