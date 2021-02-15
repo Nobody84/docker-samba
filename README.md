@@ -8,10 +8,10 @@ Samba docker container for samba including the Web Service Discovery host daemon
 
 This docker image did not change the way samba is used in the original image. It just adds the WSDD python script from https://github.com/christgau/wsdd and runs it in addition to samba.
 
-# Configure WSSD and/or SAMBA
+# Configure WSDD and/or SAMBA
 
-## WSSD
-To set the options for WSSD you have to use the environment variable `WSSD_PARAMETER`. For more information about the available option, please have a look at the original repository https://github.com/christgau/wsdd#options.
+## WSDD
+To set the options for WSSD you have to use the environment variable `WSDD_PARAMETER`. For more information about the available option, please have a look at the original repository https://github.com/christgau/wsdd#options.
 
 ```
 docker run -it \
