@@ -14,7 +14,7 @@ echo "Start /usr/bin/samba.sh from original docker image"
 # If the SAMBA_PARAMETER environment variable is not set use the commandline parameter.
 if [ -z "${SAMBA_PARAMETER}" ]
 then
-  SAMBA_PARAMETER=$@
+  SAMBA_PARAMETER="${$@//\\\"/\"}"
 fi
 
 if [ "${PRINT_PARAMETER}" = "yes" ]
